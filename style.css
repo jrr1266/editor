@@ -1,0 +1,433 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #666;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #38e;
+    max-width: 1000px;
+    height: 90%;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 50px #000;
+    overflow: hidden;
+}
+.barra__titulo{
+    width: 1000px;
+    height: 20%;
+    background-color: #38e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 1.5px;
+    flex-wrap: wrap;
+}
+.title{
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 150px;
+}
+h1{
+    font-size: 18px;
+    color: #eee;
+    align-self: center;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    text-shadow: 1px 1px 20px #000;
+}
+.close-ventana{
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 70px;
+    padding: 1px;
+}
+.close__ventana-button{
+    width: 30px;
+    height: 28px;
+    padding: 5px;
+    border-color: #000;
+    background-color: #f00;
+    transform: translateX(8px);
+}
+.guardar{
+    width: 30px;
+    height: 28px;
+    padding: 1px;
+    border-color: #000;
+    background: transparent;
+    transform: translateX(7px);
+}
+.guardar i{
+    background-color:transparent;
+    color: #000;
+}
+.barra__principal{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #000;
+    position: relative;
+    min-height: 15vh;
+    justify-content: space-between;
+    border-radius: 2px;
+    padding: 10px 0;
+    align-content: center;
+}
+.barra__estilo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 30%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.barra__estilo div{
+align-self: center;
+}
+.barra__estilo  div select{
+    position: relative;
+    height: 30px;
+    width: 170px;
+    border-radius: 5px;
+    border-color: #fff;
+    background-color: #aaa;
+    color: #111;
+    font-weight: 800;
+    font-family: sans-serif;
+    padding: 4px;
+
+}
+.barra__estilo div select option {
+    color: #fff;
+    font-weight: 800;
+    font-family: sans-serif;
+    background-color: #000;
+    text-align: left;
+}
+.barra__estilo div input {
+    position: relative;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    border-color: #fff;
+    background-color: #aaa;
+    color: #111;
+    font-weight: 800;
+    font-family: sans-serif;
+    padding: 4px;
+}
+.barra__herramientas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.barra__herramientas div{
+    align-self: center;
+}
+.barra__herramientas div select {
+    position: relative;
+    height: 30px;
+    width: 180px;
+    border-radius: 5px;
+    border-color: #fff;
+    background-color: #aaa;
+    color: #111;
+    font-weight: 800;
+    font-family: sans-serif;
+    padding: 4px;
+}
+.barra__herramientas div select option {
+    color: #fff;
+    font-weight: 800;
+    font-family: sans-serif;
+    background-color: #000;
+    text-align: left;
+}
+.barra__herramientas div input {
+    position: relative;
+    height: 30px;
+    width: 180px;
+    border-radius: 5px;
+    border-color: #fff;
+    background-color: #aaa;
+    color: #111;
+    font-weight: 800;
+    font-family: sans-serif;
+    padding: 4px;
+}
+.desarrollo-final{
+display: flex;
+flex-direction: column;
+max-width: 100%;
+}
+.text-area {
+    height: 450px;
+    min-width: 100%;
+    background-color: #aaa;
+    outline: 2px #000;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #000;
+    overflow-y: auto;
+}
+.text-caracter{
+    max-width: 100%;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 700;
+    background-color: #38e;
+}
+.text-area::selection{
+    background-color: #35e;
+    color: #000;
+}
+
+.text-caracter h4 {
+       font-size: 18px;
+       color: #eee;
+       margin-left: 10px;
+       font-weight: 100;
+       text-shadow: 1px 1px 20px #000;
+       padding: 2px;
+       text-transform: uppercase;
+}
+.menu-boton-barra{
+    display: none;
+}
+/*fon icons estilos*/
+#negrita{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    border: none;
+    color: #ccc;
+    background-color: #000;
+   
+}
+.estilo-letra span{
+    color: #ccc;
+}
+#Alinear-Centro{
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    border: none;
+    color: #ccc;
+    background-color: #000;
+}
+#Alinear-Derecha{
+    width: 30px;
+    border-radius: 20px;
+    border: none;
+    color: #ccc;
+    background-color: #000;
+}
+#Alinear-Izquierda{
+    width: 30px;
+    border-radius: 20px;
+    border: none;
+    color: #ccc;
+    background-color: #000;
+}
+#mayuscula-minuscula{
+    width: 30px;
+    border-radius: 20px;
+    border: none;
+    color: #ccc;
+    background-color: #000;
+}
+#color-funte{
+    display: none;
+}
+.color-funte{
+    width: 30px;
+    border-radius: 20px;
+    border: none;
+    color: #ccc;
+    background-color: #000;
+}
+#color-fondo{
+    display: none;
+}
+.color-fondo{
+    width: 30px;
+    border-radius: 20px;
+    border: none;
+    color: #ccc;
+    background-color: #000;
+}
+#default{
+    width: 30px;
+    border-radius: 20px;
+    border: none;
+    color: #ccc;
+    background-color: #000;
+}
+i{
+    width: 30px;
+    border-radius: 20px;
+    border: none;
+    color: #ccc;
+    background-color: #000;
+}
+#print{
+    width: 30px;
+    border-radius: 20px;
+    border: none;
+    color: #ccc;
+    background-color: #000;
+}
+/*parte responsiva*/
+@media screen and (max-width: 720px){
+.title{
+    display: none;
+}
+.menu-boton{
+    border: none;
+    margin-bottom: 5px;
+    padding: 2px;
+    position: absolute;
+    z-index: 100;
+}
+.menu-boton-barra{
+    border: none;
+    display: contents;
+}
+.menu-boton-barra i{
+    width: 30px;
+    border-radius: 20px;
+    border: transparent;
+    color: #fff;
+    background-color: #38e;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.barra__titulo{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.barra__principal{
+    display: none;
+    flex-direction: column;
+    z-index: 50;
+    height: 95%;
+    padding: 0 10px;
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(10px);
+}
+
+.barra__estilo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    height: 50%;
+}
+.barra__herramientas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    height: 50%;
+}
+.desarrollo-final{
+    width: auto;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 35px;
+    flex: 1;
+}
+.text-area{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.text-caracter{
+    display: none;
+}
+}
+/*hover de botones*/
+.guardar:hover{
+    cursor: pointer;
+    border: 1px solid #000;
+}
+.close__ventana-button:hover{
+    cursor: pointer;
+    border: 1px solid #000;
+}
+.color-funte i:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.altura-letra i{
+    cursor: pointer;
+    color: #fff;
+}
+#Tipo-fuente:hover{
+    cursor: pointer;
+}
+#negrita i:hover{
+    cursor: pointer;
+    color: #fff;
+}
+#mayuscula-minuscula i:hover{
+    cursor: pointer;
+    color: #fff;
+}
+#print i:hover{
+    cursor: pointer;
+    color: #fff;
+}
+.color-fondo i:hover{
+    cursor: pointer;
+    color: #fff;
+}
+#default i:hover{
+    cursor: pointer;
+    color: #fff;
+}
+#Alinear-Izquierda i:hover{
+    cursor: pointer;
+    color: #fff;
+}
+#Alinear-Centro i:hover {
+    cursor: pointer;
+    color: #fff;
+}
+#Alinear-Derecha i:hover {
+    cursor: pointer;
+    color: #fff;
+}

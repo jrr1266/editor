@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>📌Block de Notas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="barra__titulo" title="Barra de Menu">
+            <div class="title"><h1>📝Edition-Block</EDITION-BALCK></h1>
+            </div>
+            <div class="close-ventana">
+                <button class="guardar" title="Guardar"><i class="fa fa-floppy-o" aria-hidden="true"></i></button>
+                <input type="button" value="❌" class="close__ventana-button" title="Cerrar Ventana">
+            </div>
+        </div>
+        <div class="barra__principal">
+            <div class="barra__estilo">
+                <div class="color-letra">
+                    <input type="color" id="color-funte">
+                    <label for="color-funte" class="color-funte" title="Color de fuente"><i class="fa fa-paint-brush fa-2x" aria-hidden="true"></i></label>
+                </div>
+                <div class="altura-letra" title="Altura de Fuente">
+                    <input type="number" class="intro-letra">
+                    <i class="fa fa-font" aria-hidden="true"></i>
+                </div>
+                <div class="estilo-letra" title="Tipo de Fuente">
+                    <select  id="Tipo-fuente" title="Tipo de fuente" >
+                        <option value="1">Arial</option>
+                        <option value="2">Times Roman</option>
+                        <option value="3">Franklin Gothic</option>
+                        <option value="4">Verdana</option>
+                        <option value="5">Trebuchet MS</option>
+                        <option value="6">Courier New</option>
+                        <option value="7">Impact</option>
+                        <option value="8">Lucida Sans</option>
+                    </select>
+                </div>
+                <div class="negrita" title="Negrita">
+                    <button value="Negrita" id="negrita"><i class="fa fa-bold fa-2x" aria-hidden="true"></i></button>
+                </div>
+                <div class="mayuscula-minuscula" title="AA/aa">
+                    <button id="mayuscula-minuscula"> <i class="fa fa-text-height fa-2x" aria-hidden="true"></i></button>  
+                </div>
+                <div class="print" title="Imprimir"><button id="print"><i class="fa fa-print fa-2x" aria-hidden="true"></i></button></div>
+            </div>
+            <div class="barra__herramientas" >
+                <div class="background-color">
+                    <input type="color" id="color-fondo" >
+                    <label for="color-fondo" title="Color de fondo" class="color-fondo"><i class="fa fa-tint fa-2x" aria-hidden="true"></i></label>
+                </div>
+                <div class="default">
+                    <button id="default"><i class="fa fa-undo fa-2x" aria-hidden="true"></i></button>
+                </div>
+                <div class="alinear-izquierda" >
+                    <button value="Alinear a la Izquierda" title="Alinear a la Izquierda" id="Alinear-Izquierda"><i class="fa fa-align-left fa-2x" aria-hidden="true"></i></button>
+                </div>
+                <div class="alinear-centro">
+                    <button value="Alinear al Centro" title="Alinear al Centro" id="Alinear-Centro"><i class="fa fa-align-center fa-2x" aria-hidden="true"></i></button>
+                </div>
+                <div class="alinear-Derecha">
+                    <button value="Alinear a la Derecha" title="Alinear a la Derecha" id="Alinear-Derecha"><i class="fa fa-align-right fa-2x" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="desarrollo-final">
+            <div class="text-area" contenteditable="true"></div>
+            <div class="text-caracter"><h4 >La última letra escrita es:<span class="cantidad-letras"></span></h4></div>
+        </div>
+        <div class="menu-boton">
+        <button class="menu-boton-barra"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+        </div>
+    </div>
+     <script src="index.js"></script>       
+</body>
+</html>
